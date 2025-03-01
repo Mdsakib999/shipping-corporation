@@ -11,8 +11,9 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <HomeService></HomeService>
       <PartnerAbout></PartnerAbout>
+      <HomeService></HomeService>
+
       <CustomerReview />
       <ContactForm />
     </div>

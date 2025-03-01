@@ -7,7 +7,7 @@ const Banner = () => {
       className="relative w-full h-screen flex items-center justify-center text-white text-center p-8"
       style={{
         backgroundImage:
-          "url('https://www.constructionworld.in/assets/uploads/20f5aa8f827629e9ddb6f62b289002d5.jpg')",
+          "url('https://images.unsplash.com/photo-1617952740732-26b1904d6853?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

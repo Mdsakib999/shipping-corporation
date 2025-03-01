@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -63,17 +63,6 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/kontakt"
-          className={({ isActive }) =>
-            `relative hover:text-blue-500 transition duration-300 ${
-              isActive ? "text-blue-600 font-semibold underline" : ""
-            }`
-          }
-        >
-          Contact
-        </NavLink>
-
-        <NavLink
           to="/impressum-and-datenschutz"
           className={({ isActive }) =>
             `relative hover:text-blue-600 transition duration-300 ${
@@ -83,6 +72,10 @@ const Navbar = () => {
         >
           Impressum & Datenschutz
         </NavLink>
+      </div>
+
+      <div>
+        <Link className="hidden md:block bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800" to="/kontakt">Contact</Link>
       </div>
 
       {/* Mobile Menu */}
@@ -98,6 +91,9 @@ const Navbar = () => {
           <NavLink to="/uber-uns" onClick={toggleMenu} className="hover:text-blue-600">Uber uns</NavLink>
           <NavLink to="/kontakt" onClick={toggleMenu} className="hover:text-blue-600">Kontakt</NavLink>
           <NavLink to="/impressum-and-datenschutz" onClick={toggleMenu} className="hover:text-blue-600">Impressum & Datenschutz</NavLink>
+          <div>
+        <Link className="b bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800" to="/kontakt">Contact</Link>
+      </div>
         </div>
       </div>
     </nav>

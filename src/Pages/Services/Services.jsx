@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import CustomerReview from "../../Components/CustomerReview";
 
 // Constant arrays moved outside the component
 const servicesCards = [
@@ -133,9 +132,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div>
-        <CustomerReview />
-      </div>
+      <div></div>
     </div>
   );
 };

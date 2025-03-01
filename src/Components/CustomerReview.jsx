@@ -1,7 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
-// Review data defined outside the component
 const reviews = [
   {
     name: "Jane Doe",

@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ContactForm from "../../Components/ContactForm";
 
 const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
-    useEffect(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, []);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  // Carousel images
   const images = [
     "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -16,17 +20,25 @@ const About = () => {
     "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
 
+  // Modal handlers
   const openModal = (image) => {
     setSelectedImage(image);
     setIsModalOpen(true);
   };
-
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedImage("");
   };
 
-  // Simple variant for a slight upward movement
+  // Carousel handlers
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  // Simple upward motion variant
   const upwardMotion = {
     initial: { y: 10 },
     animate: { y: 0 },
@@ -34,78 +46,115 @@ const About = () => {
   };
 
   return (
-    <div className="px-6 py-10 lg:py-16 ">
+    <div className="py-10 lg:py-16 container w-full mx-auto">
       {/* Text Section */}
       <motion.div
-        className="flex flex-col md:flex-row items-center justify-between mb-16 "
+        className="flex flex-col md:flex-row items-center justify-between mb-20"
         {...upwardMotion}
       >
-        <div className="max-w-2xl mb-8 md:mb-0 leading-7 text-md">
+        <div className="leading-7 text-md text-center max-w-4xl w-full mx-auto">
           <motion.h1
-            className="text-4xl md:text-5xl font-medium mb-4 text-center md:text-left tracking-wide py-6"
+            className="font-md text-3xl lg:text-4xl mb-4 text-center tracking-wide "
             {...upwardMotion}
           >
-            Ihr Partner für <br /> Transport und Logistik
+            Your Partner For Transport &amp; Logistics
           </motion.h1>
-          <motion.p className="text-gray-600 mb-4 max-w-xl  text-center md:text-left" {...upwardMotion}>
-            Zoll Trans Service GmbH bietet seit 2006 umfassende Dienstleistungen
-            im Import und Export, spezialisiert auf Osteuropa. Vertrauen Sie auf
-            unsere maßgeschneiderten Lösungen für Ihre Transportbedürfnisse.
+          <motion.p
+            className="text-[#004F98] mb-4 w-full text-center font-light"
+            {...upwardMotion}
+          >
+            has been offering comprehensive import and export services since
+            2006, specializing in Eastern Europe. Trust in our tailor-made
+            solutions for your transport needs.
           </motion.p>
           <Link to="/kontakt">
             <motion.button
-              className="p-4 border rounded-4xl w-45 my-10 ml-[25%] md:ml-0 hover:text-indigo-500 cursor-pointer transition duration-300"
+              className="p-2 bg-[#004F98] rounded-4xl w-40 text-white cursor-pointer transition duration-300"
               {...upwardMotion}
             >
-              Kontakt
+              Contact
             </motion.button>
           </Link>
         </div>
-
-        {/* Main Image */}
-        <motion.div
-          className="w-full md:w-1/2 h-80 md:h-auto"
-          {...upwardMotion}
-        >
-          <img
-            src="https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="Zollabfertigung Services"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </motion.div>
       </motion.div>
 
-      {/* Image Grid Section */}
-      <div>
-        <motion.h1
-          className="text-4xl md:text-5xl font-medium mb-4 text-center tracking-wide "
-          {...upwardMotion}
+      {/* Carousel Section */}
+      <motion.h1
+        className="text-4xl md:text-4xl font-medium text-center tracking-wide"
+        {...upwardMotion}
+      >
+        Custom Trans
+      </motion.h1>
+      <motion.p
+        className="text-center mb-8 text-[#004F98] pb-6 pt-6"
+        {...upwardMotion}
+      >
+        Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
+      </motion.p>
+
+      <motion.div
+        className="relative w-full h-[55vh] mx-auto overflow-hidden mb-8"
+        {...upwardMotion}
+      >
+        {/* Slider Container */}
+        <motion.div
+          className="flex transition-transform duration-300 h-full w-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          Zoll Trans
-        </motion.h1>
-        <motion.p
-          className="text-center mb-8 text-gray-600 pb-10 pt-6 "
-          {...upwardMotion}
-        >
-          Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
-        </motion.p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <motion.div
-              key={index}
-              className="relative aspect-[3/4]"
-              {...upwardMotion}
-            >
+            <div key={index} className="min-w-full h-full relative">
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-full object-cover rounded-2xl cursor-pointer hover:opacity-90 transition-opacity"
+                className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity rounded-2xl"
                 onClick={() => openModal(image)}
               />
-            </motion.div>
+            </div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+
+        {/* Prev Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-gray-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-gray-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </motion.div>
 
       {/* Modal */}
       {isModalOpen && (
@@ -154,6 +203,9 @@ const About = () => {
           </motion.div>
         </motion.div>
       )}
+      <div>
+        <ContactForm />
+      </div>
     </div>
   );
 };

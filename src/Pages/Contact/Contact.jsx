@@ -32,26 +32,16 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="relative bg-cover bg-center min-h-screen"
-      style={{
-        backgroundImage:
-          "url('https://media.istockphoto.com/id/534637743/photo/industrial-port-with-containers.jpg?s=612x612&w=0&k=20&c=J2ejE1ed31TzxqMy1x6-anSCu4CgAb-p2OrNEHLUahI=')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute inset-0 bg-gray-800 bg-opacity-60  mb-"></div>
+    <div className="py-16">
       <div className="flex flex-col lg:flex-row lg:pt-16 px-4 sm:px-6 md:px-10 md:pb-16 md:mb-10 justify-evenly w-full items-center relative pb-16">
         <motion.div
           className="mt-8 text-center lg:text-left lg:w-[40%]"
           {...fadeUp}
         >
-          <h1 className="text-3xl lg:text-5xl font-semibold text-white">
+          <h1 className="text-3xl lg:text-5xl font-semibold ">
             Kontaktieren Sie uns
           </h1>
-          <p className="text-lg text-gray-400 pt-3 lg:w-[75%] pb-5">
+          <p className="text-lg text-[#004F98] pt-3 lg:w-[75%] pb-5">
             Wir helfen Ihnen gerne bei Transport und Zollabfertigung.
           </p>
         </motion.div>
@@ -110,7 +100,7 @@ const Contact = () => {
             >
               <button
                 type="submit"
-                className="rounded-full group mt-2 border border-black hover:border-indigo-500 relative px-7 py-3  overflow-hidden font-bold bg-slate-50 lg:text-lg shadow-md hover:shadow-lg hover:bg-indigo-500  transition duration-300"
+                className="rounded-full group mt-2 border border-black hover:border-white relative px-7 py-3  overflow-hidden font-bold bg-slate-50 lg:text-lg shadow-md hover:shadow-lg hover:bg-[#004F98]  transition duration-300"
               >
                 <span className="relative text-black group-hover:text-white">
                   Nachricht senden
@@ -119,6 +109,48 @@ const Contact = () => {
             </motion.div>
           </form>
         </motion.div>
+      </div>
+      <div className="bg-white container mx-auto flex">
+        <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-start justify-between gap-8">
+          {/* Left Column: Contact Information */}
+          <div className="w-full md:w-1/3 space-y-6 py-5">
+            <h1 className="text-4xl font-bold mb-4">Location</h1>
+            <p className="text-lg text-gray-700">
+              123 Main Street,
+              <br />
+              Yogyakarta, Indonesia
+            </p>
+            <div className="mt-4">
+              <h2 className="text-2xl font-semibold">Opening Hours</h2>
+              <p className="text-gray-600">
+                Monday - Friday: 9:00 AM - 6:00 PM
+                <br />
+                Saturday: 10:00 AM - 4:00 PM
+                <br />
+                Sunday: Closed
+              </p>
+            </div>
+            <div className="mt-4">
+              <h2 className="text-2xl font-semibold">Contact</h2>
+              <p className="text-gray-600">
+                Phone: (012) 345-6789
+                <br />
+                Email: info@example.com
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Map */}
+          <div className="w-full md:w-1/2 h-[500px] md:pl-8">
+            <iframe
+              title="Google Maps"
+              className="w-full h-full rounded-2xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.090575191847!2d110.41623791415592!3d-7.890350980638159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bad1e327db44b%3A0xb1c386621e00fe30!2sKota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sen!2sid!4v1645952321163!5m2!1sen!2sid"
+              allowFullScreen={true}
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import CustomerReview from "../../Components/CustomerReview";
+import ContactForm from "../../Components/ContactForm";
 
 // Constant arrays moved outside the component
 const servicesCards = [
@@ -54,7 +56,7 @@ const Services = () => {
           <h1 className="font-md text-3xl lg:text-4xl mb-4">
             Learn More About the Segments We Serve
           </h1>
-          <p className="text-gray-600">
+          <p className="text-[#004F98]">
             Umfassende Dienstleistungen für Import und Export von Handelswaren
             aller Art seit 2006.
           </p>
@@ -132,7 +134,12 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="">
+        <CustomerReview />
+      </div>
+      <div>
+        <ContactForm />
+      </div>
     </div>
   );
 };

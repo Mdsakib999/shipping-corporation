@@ -3,10 +3,6 @@ import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -117,7 +113,7 @@ const Contact = () => {
                 className="rounded-full group mt-2 border border-black hover:border-indigo-500 relative px-7 py-3  overflow-hidden font-bold bg-slate-50 lg:text-lg shadow-md hover:shadow-lg hover:bg-indigo-500  transition duration-300"
               >
                 <span className="relative text-black group-hover:text-white">
-                Nachricht senden
+                  Nachricht senden
                 </span>
               </button>
             </motion.div>

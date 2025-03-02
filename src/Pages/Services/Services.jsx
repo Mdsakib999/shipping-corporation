@@ -7,18 +7,18 @@ import ContactForm from "../../Components/ContactForm";
 const servicesCards = [
   {
     img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Zollabfertigung Services",
-    desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zoll- und Begleitpapieren für Ihre Waren.",
+    title: "Zollabfertigungsdienste",
+    desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zoll- und Begleitdokumenten für Ihre Waren.",
   },
   {
     img: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Lagerung und Verpackung",
-    desc: "Maßgeschneiderte Lösungen für die sichere Lagerung und Verpackung Ihrer Waren während des Transportes.",
+    desc: "Der Transport hat alle ihre Lkw-Fähigkeiten im ganzen Land kombiniert, was bedeutet, dass Frachtmakler und Disponenten vollständigen Zugang zu verfügbaren Ladungen in der gesamten Flotte landesweit haben.",
   },
   {
     img: "https://images.pexels.com/photos/14400831/pexels-photo-14400831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Transportvermittlung",
-    desc: "Vertrauen Sie auf unsere Erfahrung und Expertise, um Ihre Waren effizient ans Ziel zu bringen.",
+    desc: "Vertrauen Sie auf unsere Erfahrung und Expertise, um Ihre Waren effizient an ihr Ziel zu bringen.",
   },
 ];
 
@@ -53,8 +53,8 @@ const Services = () => {
       <div className="container py-10 md:py-24 mx-auto">
         {/* Header Section */}
         <motion.div {...moveUp} className="text-center mb-10 px-3 md:px-0">
-          <h1 className="font-md text-2xl md:text-4xl mb-4">
-            Learn More About the Segments We Serve
+          <h1 className="font-md text-3xl lg:text-4xl mb-4">
+            Erfahren Sie mehr über die Segmente, die wir bedienen
           </h1>
           <p className="text-[#004F98]">
             Umfassende Dienstleistungen für Import und Export von Handelswaren
@@ -83,7 +83,7 @@ const Services = () => {
           {...moveUp}
           className="font-md text-3xl lg:text-4xl mb-4 text-center"
         >
-          Transport Solutions
+          Transportlösungen
         </motion.h1>
         <motion.p
           {...moveUp}
@@ -102,32 +102,21 @@ const Services = () => {
                 className="w-full h-auto mx-auto rounded-2xl "
               />
             </div>
-            <div className="p-4 md:p-0">
-              <h1 className="hidden md:block font-md text-xl lg:text-2xl mb-4 font-bold">
-                Custom <br /> Clearance
+            <div className="">
+              <h1 className="font-md text-xl lg:text-2xl mb-4 ">
+                Zollabfertigung
               </h1>
-              <h1 className="font-md text-2xl lg:text-2xl mb-4 font-bold md:hidden">
-                Custom Clearance
-              </h1>
-              <p className="text-gray-600 w-[90%] md:w-[50%]">
-                operates in UAE, Turkey, Azerbaijan, Russia, Ukraine, Georgia,
-                Kazakhstan, Turkmenistan and other CIS and Central Asian
-                Countries.
+              <p className="text-gray-600 w-[50%]">
+                Professionelle Unterstützung bei der Ausstellung und Bearbeitung
+                von Zolldokumenten.
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-start dm:gap-10 items-center lg:p-10 bg-[#8eb3d520] w-full rounded-2xl">
-            <div className="p-4 md:p-0">
-            <h1 className="hidden md:block font-md text-xl lg:text-2xl mb-4 font-bold">
-                Custom <br /> Clearance
-              </h1>
-              <h1 className="font-md text-2xl lg:text-2xl mb-4 font-bold md:hidden">
-                Custom Clearance
-              </h1>
-              <p className="text-gray-600 w-[90%] md:w-[50%]">
-                operates in UAE, Turkey, Azerbaijan, Russia, Ukraine, Georgia,
-                Kazakhstan, Turkmenistan and other CIS and Central Asian
-                Countries.
+          <div className="flex justify-start gap-10 items-center lg:p-10 bg-[#8eb3d520] w-full rounded-2xl">
+            <div className="">
+              <h1 className="font-md text-xl lg:text-2xl mb-4 ">Lagerung</h1>
+              <p className="text-gray-600 w-[50%]">
+                Sichere Lagerung und Verpackung Ihrer Waren für den Transport.
               </p>
             </div>
             <div className="max-w-xl p-3">

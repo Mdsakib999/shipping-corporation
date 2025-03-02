@@ -7,11 +7,12 @@ const ContactForm = () => {
         {/* Left Column: Contact Form */}
         <div className="w-full lg:w-1/3 space-y-6  pb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get in <span className="text-[#004F98]">Touch</span>
+            Nehmen Sie <span className="text-[#004F98]">Kontakt auf</span>
           </h2>
           <p className="text-gray-600">
-            Enter your query, get prompt feedback and immediate assistance. Our
-            lines are open 24/7. Keep in touch, mate!
+            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+            molestie vel, ornare non id blandit netus --- "Wir helfen Ihnen
+            gerne mit dem Transport und der Zollabfertigung.
           </p>
 
           <form className="space-y-4">
@@ -28,7 +29,7 @@ const ContactForm = () => {
               <input
                 id="email"
                 type="email"
-                placeholder="Your Email"
+                placeholder="E-Mail"
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
               />
             </div>
@@ -37,7 +38,7 @@ const ContactForm = () => {
               <input
                 id="phone"
                 type="tel"
-                placeholder="Your Phone Number"
+                placeholder="Telefonnummer"
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -46,7 +47,7 @@ const ContactForm = () => {
               <textarea
                 id="message"
                 rows={4}
-                placeholder="Your Message"
+                placeholder="Nachricht"
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
             </div>
@@ -55,7 +56,7 @@ const ContactForm = () => {
               type="submit"
               className="bg-[#004F98] text-white px-6 py-2 rounded-full hover:bg-[#004F98] transition-colors duration-300 w-full "
             >
-              SEND
+              senden
             </button>
           </form>
         </div>

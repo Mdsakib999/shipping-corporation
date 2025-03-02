@@ -15,7 +15,7 @@ const Banner = () => {
       {/* Dark Overlay */}
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
       ></div>
 
       <div className="relative p-6 rounded-xl max-w-2xl">

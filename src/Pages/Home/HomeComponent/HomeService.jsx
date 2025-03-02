@@ -18,7 +18,7 @@ const HomeService = () => {
         </div>
   
         {/* Content Card */}
-        <div className="relative bg-white text-black p-8 rounded-3xl shadow-lg max-w-4xl flex flex-col md:flex-row -mt-24">
+        <div className="relative bg-white text-black p-10 rounded-3xl text-left  max-w-4xl flex flex-col md:flex-row -mt-24 ">
           {/* Service Texts */}
           <div className="flex-1 p-4">
             <h2 className="text-xl font-bold">Custom Clearance</h2>
@@ -32,16 +32,16 @@ const HomeService = () => {
           </div>
           
           {/* Service Images */}
-          <div className="flex-1 p-4 flex flex-col gap-4">
+          <div className="flex-1 p-4 flex flex-col gap-4 relative">
             <img
-              src="https://source.unsplash.com/300x200/?containers,shipping"
+              src="https://media.istockphoto.com/id/486570435/photo/crane-lifting-up-container-in-yard.jpg?s=612x612&w=0&k=20&c=L3fiF5bi6rN8FdA3mdD7w7oCgXBHar6UvcqKGZZ9OyI="
               alt="Shipping"
               className="rounded-lg w-full"
             />
             <img
-              src="https://source.unsplash.com/200x150/?logistics,packing"
+              src="https://media.istockphoto.com/id/1250035520/photo/foreman-holding-document-walking-and-checking-the-containers-box-from-cargo-ship-for-export.jpg?s=612x612&w=0&k=20&c=UYv1k-mjHCdFUEWORzSCSf5TtlW234D7kd0tyozCWwQ="
               alt="Packing"
-              className="rounded-lg w-2/3 mx-auto"
+              className="border-8 border-white w-[220px]  absolute -bottom-3 -left-5"
             />
           </div>
         </div>

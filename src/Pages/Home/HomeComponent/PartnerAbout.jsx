@@ -16,7 +16,7 @@ const PartnerAbout = () => {
   return (
     <div className="bg-white">
       {/* About Us Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
+      <section className="container mx-auto px-4 lg:px-16  py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
         {/* Left Column: Text */}
         <motion.div {...fadeInUp} className="md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Über Uns</h2>

@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div className="bg-white container mx-auto flex">
-      <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-start justify-between gap-8">
+      <div className="container mx-auto lg:px-24 py-8 flex flex-col md:flex-row items-start justify-between gap-8 ">
         {/* Left Column: Contact Form */}
         <div className="w-full md:w-1/3 space-y-6 ">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

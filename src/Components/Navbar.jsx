@@ -94,40 +94,40 @@ const Navbar = () => {
           <FaTimes className="text-2xl cursor-pointer" onClick={toggleMenu} />
         </div>
         <div className="flex flex-col items-center space-y-6 pb-6 text-lg text-gray-800">
-          <NavLink to="/" onClick={toggleMenu} className="hover:text-blue-600">
+          <NavLink to="/" onClick={toggleMenu} className="hover:text-[#004F98]">
             Startseite
           </NavLink>
           <NavLink
             to="/dienstleistungen"
             onClick={toggleMenu}
-            className="hover:text-blue-600"
+            className="hover:text-[#004F98]"
           >
             Dienstleistugen
           </NavLink>
           <NavLink
             to="/uber-uns"
             onClick={toggleMenu}
-            className="hover:text-blue-600"
+            className="hover:text-[#004F98]"
           >
             Uber uns
           </NavLink>
           <NavLink
             to="/kontakt"
             onClick={toggleMenu}
-            className="hover:text-blue-600"
+            className="hover:text-[#004F98]"
           >
             Kontakt
           </NavLink>
           <NavLink
             to="/impressum-and-datenschutz"
             onClick={toggleMenu}
-            className="hover:text-blue-600"
+            className="hover:text-[#004F98]"
           >
             Impressum & Datenschutz
           </NavLink>
           <div>
             <Link
-              className="b bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800"
+              className="b bg-[#004F98] text-white px-6 py-2 font-semibold text-lg rounded-full hover:bg-[#004F98]"
               to="/kontakt"
             >
               Contact

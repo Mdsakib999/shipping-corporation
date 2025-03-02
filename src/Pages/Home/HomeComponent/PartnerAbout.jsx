@@ -16,19 +16,23 @@ const PartnerAbout = () => {
   return (
     <div className="bg-white">
       {/* About Us Section */}
-      <section className="container mx-auto px-4 lg:px-16  py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
+      <section className="container px-4 lg:px-16 py-16 md:py-24 flex flex-col md:flex-row gap-8">
         {/* Left Column: Text */}
-        <motion.div {...fadeInUp} className="md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Über Uns</h2>
-          <p className="text-gray-700 text-lg mb-6">
+        <motion.div {...fadeInUp} className="md:w-1/2 w-full">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center lg:text-left">
+            Über Uns
+          </h2>
+          <p className="text-gray-700 text-lg mb-6 text-center lg:text-left">
             Seit 2006 stehen wir für exzellenten Service im internationalen
             Transport, in der Logistik und Zollabfertigung. Unser erfahrenes
             Team entwickelt individuelle Lösungen, um Ihre Waren sicher und
             effizient ans Ziel zu bringen.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
-            Mehr Erfahren
-          </button>
+          <div className="w-full flex items-center justify-center lg:justify-start">
+            <button className="bg-[#004F98] text-white px-8 py-3 rounded-full hover:bg-[#004F98] transition duration-300">
+              Mehr Erfahren
+            </button>
+          </div>
         </motion.div>
 
         {/* Right Column: 3 Rounded Square Images */}
@@ -60,13 +64,13 @@ const PartnerAbout = () => {
               <div className="text-center space-y-4 md:space-y-6 text-white">
                 <motion.h2
                   {...fadeInUp}
-                  className="text-3xl md:text-4xl font-bold drop-shadow-md"
+                  className="text-xl md:text-4xl font-bold drop-shadow-md"
                 >
                   Unsere Mission
                 </motion.h2>
                 <motion.p
                   {...fadeInUp}
-                  className="text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md leading-relaxed"
+                  className="text-md md:text-xl max-w-2xl mx-auto drop-shadow-md leading-relaxed"
                 >
                   Unser Ziel ist es, Ihnen den bestmöglichen Service im
                   internationalen Transport zu bieten – schnell, sicher und

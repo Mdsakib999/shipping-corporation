@@ -39,10 +39,10 @@ const Contact = () => {
           {...fadeUp}
         >
           <h1 className="text-3xl lg:text-5xl font-semibold ">
-            Kontaktieren Sie uns
+            Kontaktinformationen
           </h1>
           <p className="text-lg text-[#004F98] pt-3 lg:w-[75%] pb-5">
-            Wir helfen Ihnen gerne bei Transport und Zollabfertigung.
+            Wir helfen Ihnen gerne mit dem Transport und der Zollabfertigung
           </p>
         </motion.div>
 

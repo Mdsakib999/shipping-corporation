@@ -99,7 +99,7 @@ const About = () => {
       >
         {/* Slider Container */}
         <motion.div
-          className="flex transition-transform duration-300 h-full w-full"
+          className="flex transition-transform duration-300 h-full w-full "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (

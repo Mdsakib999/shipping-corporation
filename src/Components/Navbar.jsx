@@ -127,7 +127,7 @@ const Navbar = () => {
           </NavLink>
           <div>
             <Link
-              className="b bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800"
+              className=" bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800"
               to="/kontakt"
             >
               Contact

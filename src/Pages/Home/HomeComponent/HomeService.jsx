@@ -6,7 +6,7 @@ const HomeService = () => {
         {/* Background Image */}
         <div className="w-full h-[300px] relative">
           <img
-            src="https://www.constructionworld.in/assets/uploads/20f5aa8f827629e9ddb6f62b289002d5.jpg"
+            src="https://t3.ftcdn.net/jpg/08/47/40/06/360_F_847400652_Q6ZvM8q0fSXCn8h2bHqc97xQNBNoN33v.jpg"
             alt="Shipping"
             className="w-full h-full object-cover"
           />

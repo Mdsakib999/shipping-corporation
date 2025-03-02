@@ -47,7 +47,7 @@ const About = () => {
   };
 
   return (
-    <div className="py-10 lg:py-16 container w-full mx-auto">
+    <div className="py-10 lg:py-16 container mx-auto w-[95%]">
       {/* Text Section */}
       <motion.div
         className="flex flex-col md:flex-row items-center justify-between mb-20"
@@ -100,7 +100,7 @@ const About = () => {
       >
         {/* Slider Container */}
         <motion.div
-          className="flex transition-transform duration-300 h-full w-full"
+          className="flex transition-transform duration-300 h-full w-full "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (

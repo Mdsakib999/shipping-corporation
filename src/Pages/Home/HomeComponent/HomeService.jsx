@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const HomeService = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
   return (
     <div className="relative w-full flex flex-col items-center text-white ">
       {/* Background Image */}
-      <div className="w-full h-[300px] relative">
+      <div className="w-full h-[350px] relative">
         <img
           src="https://www.constructionworld.in/assets/uploads/20f5aa8f827629e9ddb6f62b289002d5.jpg"
           alt="Shipping"

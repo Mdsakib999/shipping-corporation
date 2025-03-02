@@ -6,7 +6,7 @@ const Footer = () => {
 
 
       <footer className="bg-[#004F98] text-white py-10 px-6 md:px-16 ">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 border-t border-b pb-6 mt-12  pt-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b pb-6 mt-12  pt-10">
 
         <div className="flex flex-col justify-center">
             <h2 className="font-bold text-lg mb-2">Zoll-Trans-Service GmbH</h2>
@@ -29,17 +29,6 @@ const Footer = () => {
             <p className="mt-2">Service</p>
             <p className="mt-2">Contact</p>
           </div>
-
-          <div className="">
-            
-            <p className="text-lg font-semibold">Quick Links</p>
-            <p className="mt-3">Terms & services</p>
-            <p className="mt-2">Privacy Policy</p>
-            <p className="mt-2">Refund Policy</p>
-          </div>
-
-
-
 
           {/* Right Section */}
           <div className="flex flex-col justify-center">

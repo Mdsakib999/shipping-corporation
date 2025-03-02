@@ -31,7 +31,7 @@ const CustomerReview = () => {
   );
 
   const reviewTwo = (
-    <div className="bg-[#004F98] shadow-lg p-6 rounded-2xl min-h-[250px] max-w-sm flex flex-col">
+    <div className="bg-[#004F98] shadow-lg p-6 rounded-2xl min-h-[250px] max-w-sm flex flex-col ">
       <div className="flex items-center mb-4">
         <div className="w-16 h-16 rounded-full mr-4 overflow-hidden">
           <img
@@ -63,7 +63,7 @@ const CustomerReview = () => {
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 p-4">
         Was unsere Kunden sagen
       </h2>
-      <div className="max-w-4xl flex flex-col lg:flex-row justify-center mx-auto gap-4 p-4">
+      <div className="max-w-4xl flex flex-col lg:flex-row justify-center items-center mx-auto gap-4 p-4 ">
         {reviewOne}
         {reviewTwo}
       </div>

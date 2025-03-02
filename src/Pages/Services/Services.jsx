@@ -44,12 +44,12 @@ const moveUp = {
 };
 
 const Services = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full px-10 md:px-20">
       <div className="container py-10 md:py-24 mx-auto">
         {/* Header Section */}
         <motion.div {...moveUp} className="text-center mb-10 px-3 md:px-0">
@@ -63,7 +63,7 @@ const Services = () => {
         </motion.div>
 
         {/* Services Cards */}
-        <div className="flex gap-2 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-3 items-center justify-between">
           {servicesCards.map((service, index) => (
             <motion.div {...moveUp} key={index} className="max-w-md">
               <img
@@ -71,14 +71,14 @@ const Services = () => {
                 alt={service.title}
                 className="w-full h-auto mx-auto rounded-2xl"
               />
-              <h2 className="text-xl font-semibold mt-4">{service.title}</h2>
+              <h2 className="text-xl font-bold mt-4">{service.title}</h2>
               <p className="mt-2 text-md text-gray-600">{service.desc}</p>
             </motion.div>
           ))}
         </div>
       </div>
 
-      <div className="py-16 container mx-auto">
+      <div className="py-10  container mx-auto">
         <motion.h1
           {...moveUp}
           className="font-md text-3xl lg:text-4xl mb-4 text-center"
@@ -93,13 +93,13 @@ const Services = () => {
         </motion.p>
 
         {/* Services List */}
-        <div className="flex flex-col gap-16 rounded-2xl">
-          <div className="flex justify-start gap-10 items-center lg:p-10 bg-[#8eb3d520] w-full rounded-2xl">
-            <div className="max-w-xl">
+        <div className="flex flex-col gap-16 rounded-2xl ">
+          <div className="flex flex-col md:flex-row justify-start md:gap-10 items-center lg:p-10 bg-[#8eb3d520] w-full rounded-2xl ">
+            <div className="max-w-xl p-3">
               <img
                 src={transportServices[0].img}
                 alt=""
-                className="w-full h-auto mx-auto rounded-2xl"
+                className="w-full h-auto mx-auto rounded-2xl "
               />
             </div>
             <div className="">
@@ -119,7 +119,7 @@ const Services = () => {
                 Sichere Lagerung und Verpackung Ihrer Waren für den Transport.
               </p>
             </div>
-            <div className="max-w-xl">
+            <div className="max-w-xl p-3">
               <img
                 src={transportServices[1].img}
                 alt=""

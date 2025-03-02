@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import CustomerReview from "../../Components/CustomerReview";
 
 const Services = () => {
   useEffect(() => {
@@ -108,7 +107,7 @@ const Services = () => {
         </div>
       </div>
       <div>
-        <CustomerReview />
+      
       </div>
     </div>
   );

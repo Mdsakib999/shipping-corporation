@@ -38,7 +38,7 @@ const Navbar = () => {
             }`
           }
         >
-          Home
+          Heim
         </NavLink>
 
         <NavLink
@@ -49,7 +49,7 @@ const Navbar = () => {
             }`
           }
         >
-          Service
+          Dienstleistungen
         </NavLink>
 
         <NavLink
@@ -60,7 +60,17 @@ const Navbar = () => {
             }`
           }
         >
-          About
+          über
+        </NavLink>
+        <NavLink
+          to="/impressum-and-datenschutz"
+          className={({ isActive }) =>
+            `relative hover:text-[#004F98] transition duration-300 ${
+              isActive ? "text-[#004F98] font-semibold border-b-2" : ""
+            }`
+          }
+        >
+          Impressum & Datenschutz
         </NavLink>
       </div>
 
@@ -69,7 +79,7 @@ const Navbar = () => {
           className="hidden md:block bg-[#004F98] text-white px-6 py-2 font-semibold text-lg rounded-full hover:bg-[#004F98]"
           to="/kontakt"
         >
-          Contact
+          Kontakt
         </Link>
       </div>
 
@@ -84,7 +94,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col items-center space-y-6 pb-6 text-lg text-gray-800">
           <NavLink to="/" onClick={toggleMenu} className="hover:text-[#004F98]">
-            Startseite
+          Heim
           </NavLink>
           <NavLink
             to="/dienstleistungen"
@@ -98,8 +108,9 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="hover:text-[#004F98]"
           >
-            Uber uns
+            über
           </NavLink>
+          <NavLink to="/impressum-and-datenschutz" onClick={toggleMenu} className="hover:text-blue-600">Impressum & Datenschutz</NavLink>
  
 
           <div>

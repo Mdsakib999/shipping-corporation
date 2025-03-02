@@ -70,7 +70,7 @@ const ContactForm = () => {
           <iframe
             title="Google Maps"
             className="w-full h-full rounded-2xl"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.090575191847!2d110.41623791415592!3d-7.890350980638159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bad1e327db44b%3A0xb1c386621e00fe30!2sKota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sen!2sid!4v1645952321163!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.647562799119!2d8.923972176076921!3d50.1116034117042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd16f3888c6e61%3A0x4b591067472f85d4!2sVoltastra%C3%9Fe%2010%2C%2063457%20Hanau%2C%20Germany!5e0!3m2!1sen!2sbd!4v1740951071499!5m2!1sen!2sbd"
             allowFullScreen={true}
             loading="lazy"
           ></iframe>

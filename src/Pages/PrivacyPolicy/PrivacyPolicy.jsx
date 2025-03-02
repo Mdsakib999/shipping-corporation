@@ -12,39 +12,38 @@ const PrivacyPolicy = () => {
           Impressum
         </h1>
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Zoll-Trans-Service GmbH</strong>
+          <strong>By Transport</strong>
           <br />
-          Zum Stichkanal 1 A
-          <br />
-          16727 Velten
+          Voltastr. 10, 63457 Hanau, Deutschland
         </p>
+
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Telefon:</strong> +49 (0) 4065 580053
+          <strong>Telefon:</strong> +49 40 74306785
           <br />
-          <strong>E-Mail:</strong> customs@zoll-trans.de
+          <strong>E-Mail:</strong> info@by-transport.de
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
-          Vertretungsberechtigte Person
+        Vertretungsberechtigter
         </h2>
         <p className="mb-2 text-base sm:text-lg">
-          Geschäftsführer: Uwe Peter Bernhardt
+        Geschäftsführer: Kaya Ali Hanau
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
-          Registereintrag
+        Register
         </h2>
         <p className="mb-2 text-base sm:text-lg">
           Eintragung im Handelsregister.
           <br />
-          <strong>Registergericht:</strong> Amtsgericht Charlottenburg (Berlin)
+          <strong>Registergericht:</strong> Amtsgericht Hanau
           <br />
-          <strong>Registernummer:</strong> HRB 100381 B
+          <strong>Registernummer:</strong> HRB 92044
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
+        {/* <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Umsatzsteuer-Identifikationsnummer
         </h2>
         <p className="mb-2 text-base sm:text-lg">
           Gemäß § 27 a Umsatzsteuergesetz: DE247501028
-        </p>
+        </p> */}
       </section>
 
       {/* Datenschutzerklärung Section */}
@@ -53,13 +52,10 @@ const PrivacyPolicy = () => {
           Datenschutzerklärung
         </h1>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
-          1. Allgemeine Hinweise
+          1. Allgemeine Informationen
         </h2>
         <p className="mb-4 text-base sm:text-lg">
-          Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen.
-          Wir behandeln Ihre personenbezogenen Daten vertraulich und
-          entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser
-          Datenschutzerklärung.
+        Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
         </p>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
           2. Verantwortliche Stelle
@@ -69,15 +65,13 @@ const PrivacyPolicy = () => {
           Website ist:
         </p>
         <p className="mb-4 text-base sm:text-lg">
-          Zoll-Trans-Service GmbH
+        By Transport
           <br />
-          Zum Stichkanal 1 A
+          Voltastr. 10, 63457 Hanau, Deutschland
           <br />
-          16727 Velten
+          <strong>Telefon:</strong> +49 40 74306785
           <br />
-          <strong>Telefon:</strong> +49 (0) 4065 580053
-          <br />
-          <strong>E-Mail:</strong> customs@zoll-trans.de
+          <strong>E-Mail:</strong> info@by-transport.de
         </p>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
           3. Erhebung und Speicherung personenbezogener Daten sowie Art und

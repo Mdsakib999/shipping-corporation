@@ -6,7 +6,7 @@ const HomeService = () => {
     }, []);
 
   return (
-    <div className="relative w-full flex flex-col items-center text-white text-center">
+    <div className="relative w-full flex flex-col items-center text-white ">
       {/* Background Image */}
       <div className="w-full h-[350px] relative">
         <img

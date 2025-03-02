@@ -20,13 +20,10 @@ const PartnerAbout = () => {
         {/* Left Column: Text */}
         <motion.div {...fadeInUp} className="md:w-1/2 w-full">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center lg:text-left">
-            Über Uns
+            Über unser Unternehmen
           </h2>
           <p className="text-gray-700 text-lg mb-6 text-center lg:text-left">
-            Seit 2006 stehen wir für exzellenten Service im internationalen
-            Transport, in der Logistik und Zollabfertigung. Unser erfahrenes
-            Team entwickelt individuelle Lösungen, um Ihre Waren sicher und
-            effizient ans Ziel zu bringen.
+            Mit Zugang zu großen Lieferanten und Herstellern weltweit.
           </p>
           <div className="w-full flex items-center justify-center lg:justify-start">
             <button className="bg-[#004F98] text-white px-8 py-3 rounded-full hover:bg-[#004F98] transition duration-300">
@@ -66,16 +63,16 @@ const PartnerAbout = () => {
                   {...fadeInUp}
                   className="text-xl md:text-4xl font-bold drop-shadow-md"
                 >
-                  Unsere Mission
+                  UNSERE MISSION
                 </motion.h2>
                 <motion.p
                   {...fadeInUp}
                   className="text-md md:text-xl max-w-2xl mx-auto drop-shadow-md leading-relaxed"
                 >
-                  Unser Ziel ist es, Ihnen den bestmöglichen Service im
-                  internationalen Transport zu bieten – schnell, sicher und
-                  effizient. Mit innovativen Technologien und einem engagierten
-                  Team setzen wir Maßstäbe in der Logistikbranche.
+                  UNSERE MISSION ist es, erstklassige Qualität und
+                  Dienstleistungen allen unseren wertvollen Kunden zu bieten und
+                  stets innovativ und aufmerksam auf dem Markt zu sein, den wir
+                  bedienen.
                 </motion.p>
               </div>
             </div>

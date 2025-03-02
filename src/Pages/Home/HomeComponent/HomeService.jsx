@@ -13,7 +13,7 @@ const HomeService = () => {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 flex items-center justify-center p-6">
           <h1 className="absolute inset-0 flex items-center justify-center text-4xl font-bold">
-            Our Services
+            Unsere Dienstleistungen
           </h1>
         </div>
       </div>
@@ -22,19 +22,21 @@ const HomeService = () => {
       <div className="relative bg-white text-black p-10 rounded-3xl text-left  max-w-4xl flex flex-col md:flex-row -mt-24 ">
         {/* Service Texts */}
         <div className="flex-1 p-4">
-          <h2 className="text-xl font-bold">Custom Clearance</h2>
+          <h2 className="text-xl font-bold">Zollabfertigung</h2>
           <p className="text-gray-600 mb-4">
-            Explore our comprehensive range of chartering services
+            Professionelle Unterstützung bei der Zollabfertigung und der
+            Vorbereitung der Begleitdokumente
           </p>
 
-          <h2 className="text-xl font-bold">Storage & Packaging</h2>
+          <h2 className="text-xl font-bold">Lagerung & Verpackung</h2>
           <p className="text-gray-600 mb-4">
-            Explore our comprehensive range of chartering services.
+            Sichere Verpackung und Lagerung Ihrer Waren für einen reibungslosen
+            Transport.
           </p>
 
-          <h2 className="text-xl font-bold">Transport Brokerage</h2>
+          <h2 className="text-xl font-bold">Transportvermittlung </h2>
           <p className="text-gray-600">
-            Explore our comprehensive range of chartering.
+            Effiziente Transportvermittlung für Ihre Waren in Osteuropa.
           </p>
         </div>
 

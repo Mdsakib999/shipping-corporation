@@ -3,8 +3,13 @@ import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 
 const Contact = () => {
+    // useEffect(() => {
+    //   window.scrollTo({ top: 0, behavior: "smooth" });
+    // }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("Form submitted!");
     Swal.fire({
       title: "Thank You!",
       text: "Your message has been sent successfully.",
@@ -33,16 +38,16 @@ const Contact = () => {
 
   return (
     <div className="py-16">
-      <div className="flex flex-col lg:flex-row lg:pt-16 px-4 sm:px-6 md:px-10 md:pb-16 md:mb-10 justify-evenly w-full items-center relative pb-16">
+      <div className="flex flex-col lg:flex-row lg:pt-16 px-4 sm:px-6 md:px-10 md:pb-16 md:mb-10 justify-evenly w-full items-center relative pb-16 ">
         <motion.div
           className="mt-8 text-center lg:text-left lg:w-[40%]"
           {...fadeUp}
         >
           <h1 className="text-3xl lg:text-5xl font-semibold ">
-            Kontaktieren Sie uns
+            Kontaktinformationen
           </h1>
           <p className="text-lg text-[#004F98] pt-3 lg:w-[75%] pb-5">
-            Wir helfen Ihnen gerne bei Transport und Zollabfertigung.
+            Wir helfen Ihnen gerne mit dem Transport und der Zollabfertigung
           </p>
         </motion.div>
 
@@ -110,10 +115,10 @@ const Contact = () => {
           </form>
         </motion.div>
       </div>
-      <div className="bg-white container mx-auto flex">
-        <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-start justify-between gap-8">
+      <div className="bg-white container mx-auto flex ">
+        <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-start justify-between gap-8 lg:px-20 ">
           {/* Left Column: Contact Information */}
-          <div className="w-full md:w-1/3 space-y-6 py-5">
+          <div className="w-full md:w-1/3 space-y-6 py-5 text-center md:text-left lg:ml-24">
             <h1 className="text-4xl font-bold mb-4">Location</h1>
             <p className="text-lg text-gray-700">
               123 Main Street,

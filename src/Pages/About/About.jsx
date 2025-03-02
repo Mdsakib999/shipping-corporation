@@ -58,22 +58,22 @@ const About = () => {
             className="font-md text-3xl lg:text-4xl mb-4 text-center tracking-wide "
             {...upwardMotion}
           >
-            Your Partner For Transport &amp; Logistics
+            Ihr zuverlässiger Partner für Transport und Logistik
           </motion.h1>
           <motion.p
             className="text-[#004F98] mb-4 w-full text-center font-light"
             {...upwardMotion}
           >
-            has been offering comprehensive import and export services since
-            2006, specializing in Eastern Europe. Trust in our tailor-made
-            solutions for your transport needs.
+            Seit 2006 bieten wir umfassende Import- und Exportdienstleistungen
+            an und haben uns auf Osteuropa spezialisiert. Vertrauen Sie auf
+            unsere maßgeschneiderten Lösungen für Ihre Transportbedürfnisse
           </motion.p>
           <Link to="/kontakt">
             <motion.button
               className="p-2 bg-[#004F98] rounded-4xl w-40 text-white cursor-pointer transition duration-300"
               {...upwardMotion}
             >
-              Contact
+              Kontakt
             </motion.button>
           </Link>
         </div>
@@ -84,13 +84,14 @@ const About = () => {
         className="text-4xl md:text-4xl font-medium text-center tracking-wide"
         {...upwardMotion}
       >
-        Custom Trans
+        Maßgeschneiderte Transportlösungen
       </motion.h1>
       <motion.p
         className="text-center mb-8 text-[#004F98] pb-6 pt-6"
         {...upwardMotion}
       >
-        Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
+        Bereitstellung von Transport-, Logistik- und Zollabfertigungslösungen
+        seit 2006
       </motion.p>
 
       <motion.div

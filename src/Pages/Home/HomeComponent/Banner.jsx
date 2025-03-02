@@ -19,17 +19,12 @@ const Banner = () => {
       ></div>
 
       <div className="relative p-6 rounded-xl max-w-2xl">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+        <h1 className="text-6xl font-bold mb-4">
+          Ultimative Lösungen für Ihre Geschäftsträume
+        </h1>
         <p className="text-lg mb-6">
-          We provide top-notch solutions in construction and development.
-          Contact us today to learn more about our services.
+          Wir bieten erstklassige Lösungen im Bauwesen und in der Entwicklung.
         </p>
-        <a
-          href="" // Replace with your actual contact link
-          className="bg-[#004F98] hover:bg-[#004F98] text-white font-semibold py-3 px-6 rounded-full transition"
-        >
-          Contact Us
-        </a>
       </div>
     </div>
   );

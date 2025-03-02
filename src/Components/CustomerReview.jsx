@@ -59,7 +59,7 @@ const CustomerReview = () => {
   return (
     <div className="py-6 lg:py-16 container mx-auto">
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 p-4">
-        What Our Customers Say
+        Was unsere Kunden sagen
       </h2>
       <div className="max-w-4xl flex flex-col lg:flex-row justify-center items-center mx-auto gap-4 p-4 ">
         {reviewOne}

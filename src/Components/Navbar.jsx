@@ -100,26 +100,14 @@ const Navbar = () => {
           >
             Uber uns
           </NavLink>
-          <NavLink
-            to="/kontakt"
-            onClick={toggleMenu}
-            className="hover:text-[#004F98]"
-          >
-            Kontakt
-          </NavLink>
-          <NavLink
-            to="/impressum-and-datenschutz"
-            onClick={toggleMenu}
-            className="hover:text-[#004F98]"
-          >
-            Impressum & Datenschutz
-          </NavLink>
+ 
+
           <div>
             <Link
-              className="b bg-[#004F98] text-white px-6 py-2 font-semibold text-lg rounded-full hover:bg-[#004F98]"
+              className=" bg-[#004F98] text-white px-6 py-2 font-semibold text-lg rounded-full hover:bg-[#004F98]"
               to="/kontakt"
             >
-              Contact
+              Kontakt
             </Link>
           </div>
         </div>

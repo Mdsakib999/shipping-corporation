@@ -66,7 +66,7 @@ const ContactForm = () => {
         </div>
 
         {/* Right Column: Map */}
-        <div className="w-full lg:w-1/2 h-[500px] md:pl-8">
+        <div className="w-full lg:w-1/2 lg:h-[450px] h-[300px] md:pl-8">
           <iframe
             title="Google Maps"
             className="w-full h-full rounded-2xl"

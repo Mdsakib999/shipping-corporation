@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
 const HomeService = () => {
-    useEffect(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, []);
+    // useEffect(() => {
+    //   window.scrollTo({ top: 0, behavior: "smooth" });
+    // }, []);
 
   return (
     <div className="relative w-full flex flex-col items-center text-white ">
@@ -16,14 +16,14 @@ const HomeService = () => {
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 flex items-center justify-center p-6">
-          <h1 className="absolute inset-0 flex items-center justify-center text-4xl font-bold">
+          <h1 className="absolute inset-0 flex items-center justify-center text-4xl font-bold  text-center">
             Unsere Dienstleistungen
           </h1>
         </div>
       </div>
 
       {/* Content Card */}
-      <div className="relative bg-white text-black p-10 rounded-3xl text-left  max-w-4xl flex flex-col md:flex-row -mt-24 ">
+      <div className="relative bg-white text-black p-3 md:p-10 rounded-3xl text-left  max-w-4xl flex flex-col md:flex-row -mt-24 mx-3 md:mx-0">
         {/* Service Texts */}
         <div className="flex-1 p-4">
           <h2 className="text-xl font-bold">Zollabfertigung</h2>

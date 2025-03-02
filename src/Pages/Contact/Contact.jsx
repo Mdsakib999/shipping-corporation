@@ -3,9 +3,9 @@ import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-    // useEffect(() => {
-    //   window.scrollTo({ top: 0, behavior: "smooth" });
-    // }, []);
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -120,33 +120,23 @@ const Contact = () => {
           {/* Left Column: Contact Information */}
           <div className="w-full md:w-1/3 space-y-6 py-5 text-center md:text-left lg:ml-24">
             <h1 className="text-4xl font-bold mb-4">Location</h1>
-            <p className="text-lg text-gray-700">
-              123 Main Street,
-              <br />
-              Yogyakarta, Indonesia
-            </p>
-            <div className="mt-4">
-              <h2 className="text-2xl font-semibold">Opening Hours</h2>
-              <p className="text-gray-600">
-                Monday - Friday: 9:00 AM - 6:00 PM
-                <br />
-                Saturday: 10:00 AM - 4:00 PM
-                <br />
-                Sunday: Closed
+            <p className="text-gray-600">
+              Voltastr. 10, 63457 Hanau, Germany <br />
+              Großkrotzenburg, Germany
               </p>
-            </div>
+
             <div className="mt-4">
               <h2 className="text-2xl font-semibold">Contact</h2>
               <p className="text-gray-600">
-                Phone: (012) 345-6789
+                {/* Phone:  */}
                 <br />
-                Email: info@example.com
+                Email: info@by-transport.de
               </p>
             </div>
           </div>
 
           {/* Right Column: Map */}
-          <div className="w-full md:w-1/2 h-[500px] md:pl-8">
+          <div className="w-full md:w-1/2 h-[400px] md:pl-8">
             <iframe
               title="Google Maps"
               className="w-full h-full rounded-2xl"

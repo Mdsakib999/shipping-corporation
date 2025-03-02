@@ -1,28 +1,29 @@
 import React from "react";
+import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
 
-
       <footer className="bg-[#004F98] text-white py-10 px-6 md:px-16 ">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b pb-6 mt-12  pt-10">
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center text-center md:text-left">
             <h2 className="font-bold text-lg mb-2">Zoll-Trans-Service GmbH</h2>
             <p className="font-bold">+49 (0) 4065 580053</p>
             <a
-              href="mailto:customs@zoll-trans.de"
+              href="mailto:info@by-transport.de"
               className="text-blue-100 underline mb-2"
             >
-              customs@zoll-trans.de
+              info@by-transport.de
             </a>
-            <p className="mb-1">Zum Stichkanal 1 A</p>
+            <p className="mb-1">Voltastr. 10, 63457 Hanau, Germany
+            Großkrotzenburg, Germany</p>
             
           </div>
 
           {/* Left Section */}
-          <div className="">
+          <div className=" text-center">
             
             <p className="text-lg font-semibold">Company</p>
             <p className="mt-3">About</p>
@@ -48,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-center mt-2">Copyright</p>
+        <p className="text-center mt-2 ">BY Translort. All rights reserved</p>
       </footer>
     </div>
   );

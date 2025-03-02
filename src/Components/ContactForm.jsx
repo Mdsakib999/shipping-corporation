@@ -21,6 +21,7 @@ const ContactForm = () => {
                 id="name"
                 type="text"
                 placeholder="Name"
+                required
                 className="w-full border border-gray-200 rounded  px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
               />
             </div>
@@ -30,6 +31,7 @@ const ContactForm = () => {
                 id="email"
                 type="email"
                 placeholder="E-Mail"
+                required
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
               />
             </div>
@@ -39,6 +41,7 @@ const ContactForm = () => {
                 id="phone"
                 type="tel"
                 placeholder="Telefonnummer"
+                required
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -48,13 +51,14 @@ const ContactForm = () => {
                 id="message"
                 rows={4}
                 placeholder="Nachricht"
+                required
                 className="w-full border border-gray-200 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
             </div>
 
             <button
               type="submit"
-              className="bg-[#004F98] text-white px-6 py-2 rounded-full hover:bg-[#004F98] transition-colors duration-300 w-full "
+              className="bg-[#004F98] text-white px-6 py-2 rounded-full hover:bg-[#004F98] transition-colors duration-300 w-full cursor-pointer "
             >
               senden
             </button>

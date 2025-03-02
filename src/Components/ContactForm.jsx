@@ -2,10 +2,10 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-white container mx-auto flex">
-      <div className="container mx-auto lg:px-24 py-8 flex flex-col md:flex-row items-start justify-between gap-8 ">
+    <div className="bg-white container mx-auto flex p-4 lg:p-0">
+      <div className="container mx-auto lg:px-24 py-8 flex flex-col md:flex-row items-start justify-between lg:gap-8 ">
         {/* Left Column: Contact Form */}
-        <div className="w-full md:w-1/3 space-y-6 ">
+        <div className="w-full lg:w-1/3 space-y-6  pb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Get in <span className="text-[#004F98]">Touch</span>
           </h2>
@@ -61,7 +61,7 @@ const ContactForm = () => {
         </div>
 
         {/* Right Column: Map */}
-        <div className="w-full md:w-1/2 h-[500px] md:pl-8">
+        <div className="w-full lg:w-1/2 h-[500px] md:pl-8">
           <iframe
             title="Google Maps"
             className="w-full h-full rounded-2xl"

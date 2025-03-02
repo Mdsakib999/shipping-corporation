@@ -62,17 +62,6 @@ const Navbar = () => {
         >
           About
         </NavLink>
-
-        <NavLink
-          to="/impressum-and-datenschutz"
-          className={({ isActive }) =>
-            `relative hover:text-[#004F98] transition duration-300 ${
-              isActive ? "text-[#004F98] font-semibold border-b-2" : ""
-            }`
-          }
-        >
-          Impressum & Datenschutz
-        </NavLink>
       </div>
 
       <div>
@@ -118,13 +107,7 @@ const Navbar = () => {
           >
             Kontakt
           </NavLink>
-          <NavLink
-            to="/impressum-and-datenschutz"
-            onClick={toggleMenu}
-            className="hover:text-blue-600"
-          >
-            Impressum & Datenschutz
-          </NavLink>
+
           <div>
             <Link
               className=" bg-blue-700 text-white px-6 py-2 font-semibold text-lg rounded-lg hover:bg-blue-800"

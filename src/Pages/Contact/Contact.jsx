@@ -127,7 +127,7 @@ const Contact = () => {
             <div className="mt-4">
               <h2 className="text-2xl font-semibold">Contact</h2>
               <p className="text-gray-600">
-                Phone: +49 40 74306785
+                Phone: +49 4154 5924016
                 <br />
                 Email: info@by-transport.de
               </p>

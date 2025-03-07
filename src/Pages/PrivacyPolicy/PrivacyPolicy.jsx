@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Telefon:</strong> +49 40 74306785
+          <strong>Telefon:</strong> +49 4154 5924016
           <br />
           <strong>E-Mail:</strong> info@by-transport.de
         </p>
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
           <br />
           Voltastr. 10, 63457 Hanau, Deutschland
           <br />
-          <strong>Telefon:</strong> +49 40 74306785
+          <strong>Telefon:</strong> +49 4154 5924016
           <br />
           <strong>E-Mail:</strong> info@by-transport.de
         </p>

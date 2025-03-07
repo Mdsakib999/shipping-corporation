@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="flex flex-col justify-center text-center items-center md:items-start md:text-left">
             <h2 className="font-bold text-lg mb-2">BY Transport</h2>
-            <p className="mb-2 flex items-center gap-x-3"><IoCall className="text-xl" /> +49 40 74306785</p>
+            <p className="mb-2 flex items-center gap-x-3"><IoCall className="text-xl" /> +49 4154 5924016</p>
             <a
               href="mailto:info@by-transport.de"
               className="text-blue-100 underline mb-2 flex items-center gap-x-3"
